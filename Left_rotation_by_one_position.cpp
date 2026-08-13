@@ -14,15 +14,12 @@ int main() {
         cin >> arr[i];
     }
 
-    // Store the first element
     int first = arr[0];
 
-    // Shift elements to the left
     for (int i = 0; i < n - 1; i++) {
         arr[i] = arr[i + 1];
     }
 
-    // Put first element at the end
     arr[n - 1] = first;
 
     cout << "Array after left rotation: ";
