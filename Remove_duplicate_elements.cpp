@@ -19,7 +19,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         bool duplicate = false;
 
-        // Check if element already exists
         for (int j = 0; j < newSize; j++) {
             if (arr[i] == arr[j]) {
                 duplicate = true;
@@ -27,7 +26,6 @@ int main() {
             }
         }
 
-        // Add only unique elements
         if (!duplicate) {
             arr[newSize] = arr[i];
             newSize++;
